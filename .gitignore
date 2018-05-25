@@ -37,4 +37,5 @@ sysinfo.txt
 .vscode
 
 #Pyxel Data
-.pyxel
+*.pyxel
+*.pyxel.meta
