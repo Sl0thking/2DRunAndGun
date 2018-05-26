@@ -19,4 +19,19 @@ public class Projectile : MonoBehaviour {
 	void Update () {
 		this.rigidBody.velocity = this.transform.right * -1 * travelSpeed;
 	}
+
+	void OnTriggerEnter2D (Collider2D other)
+    {
+		if (other.gameObject.GetComponent<Projectile>() == null)
+		{
+			var health = other.gameObject.GetComponent<Health>();
+			if (health != null)
+			{
+				int newHealth = health.currentHealth - this.damage;
+				health.currentHealth = newHealth < 0 ? 0 : newHealth;
+			}
+
+			Destroy(this.gameObject);
+		}
+    }
 }

@@ -15,17 +15,13 @@ public class PlayerController2D : PhysicsObject {
     public float horizontalJumpIntensity = 0.7f;
 
     public GameObject weapon;
-    private SpriteRenderer weaponRenderer;
     
-    private SpriteRenderer spriteRenderer;
-    private Animator animator;
+    private Animator animator;  
 
     // Use this for initialization
     void Awake () 
     {
-        spriteRenderer = GetComponent<SpriteRenderer> (); 
         animator = GetComponent<Animator> ();
-        weaponRenderer = weapon.GetComponent<SpriteRenderer>();
     }
 
     protected override void ComputeVelocity()
@@ -61,15 +57,6 @@ public class PlayerController2D : PhysicsObject {
             this.transform.rotation = Quaternion.AngleAxis(0, Vector3.up);
         }
 
-
-        // bool flipSprite = (spriteRenderer.flipX ? (transform.position.x > mousePos.x) : (transform.position.x < mousePos.x));
-        // if (flipSprite) 
-        // {
-        //     spriteRenderer.flipX = !spriteRenderer.flipX;
-        //     weaponRenderer.flipY = !weaponRenderer.flipY;
-        // }
-
-        // animator.SetBool ("grounded", grounded);
         animator.SetFloat ("velocityX", Mathf.Abs (velocity.x) / maximumSpeed);
 
         targetVelocity = move * maximumSpeed;
