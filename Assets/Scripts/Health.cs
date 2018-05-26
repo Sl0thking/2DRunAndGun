@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour {
 
@@ -10,23 +11,14 @@ public class Health : MonoBehaviour {
 
     public RectTransform healthBar;
 
-	
-	// Update is called once per frame
-	void Update () {
-
-        transform.LookAt(Camera.main.transform);
-
-    }
-
     public void TakeDamage(int amount)
     {
         currentHealth -= amount;
         if (currentHealth <= 0)
         {
             currentHealth = 0;
-            Debug.Log("Dead!");
+            SceneManager.LoadScene("Menu");
         }
-
-        healthBar.sizeDelta = new Vector2(currentHealth, healthBar.sizeDelta.y);
+        healthBar.sizeDelta = new Vector2((int)400*(currentHealth/100f), healthBar.sizeDelta.y);
     }
 }
