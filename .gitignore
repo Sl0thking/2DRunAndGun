@@ -39,4 +39,3 @@ sysinfo.txt
 #Pyxel Data
 *.pyxel
 *.pyxel.meta
-Assets/Scripts/PlayerController2D.cs
