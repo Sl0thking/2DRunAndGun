@@ -51,9 +51,9 @@ public class EnemyBasicBehavior : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
         negativeStartCast = enemyTransform.position;
-        negativeStartCast.x -= 0.2f;
+        negativeStartCast.x -= 0.4f;
         positveStartCast = enemyTransform.position;
-        positveStartCast.x += 0.2f;
+        positveStartCast.x += 0.4f;
         negativeEndCast = enemyTransform.position;
         negativeEndCast.x -= playerDistance;
         positveEndCast = enemyTransform.position;
