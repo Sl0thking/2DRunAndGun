@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class Health : MonoBehaviour {
 
@@ -17,7 +18,15 @@ public class Health : MonoBehaviour {
         if (currentHealth <= 0)
         {
             currentHealth = 0;
-            SceneManager.LoadScene("Menu");
+
+            if (this.transform.root.tag == "Player")
+            {
+                SceneManager.LoadScene("Menu");
+            }
+            else
+            {
+                Destroy(this.gameObject);
+            }
         }
         healthBar.sizeDelta = new Vector2((int)400*(currentHealth/100f), healthBar.sizeDelta.y);
     }
