@@ -12,14 +12,20 @@ public class PlayerController2D : PhysicsObject {
 	[Range (1, 20), Tooltip ("Start speed when jumping")]
     public float jumpTakeOffSpeed = 7;
 
+    public float velomultiplier = 0.5f;
+
     private SpriteRenderer spriteRenderer;
     private Animator animator;
+
+    private Health playerHealth;
+
 
     // Use this for initialization
     void Awake () 
     {
         spriteRenderer = GetComponent<SpriteRenderer> (); 
         animator = GetComponent<Animator> ();
+        playerHealth = GetComponent<Health>();
     }
 
     protected override void ComputeVelocity()
@@ -27,6 +33,13 @@ public class PlayerController2D : PhysicsObject {
         Vector2 move = Vector2.zero;
 
         move.x = Input.GetAxis ("Horizontal");
+
+        if (!grounded)
+        {
+            move.x = move.x * velomultiplier;
+            this.playerHealth.TakeDamage(1);
+            
+        }
 
         if (Input.GetButtonDown ("Jump") && grounded)
 		{
