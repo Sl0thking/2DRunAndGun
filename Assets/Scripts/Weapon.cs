@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour {
 
-	
+	[Header ("Projectile")]
+	public GameObject projectilePrefab;
+	public int projectileDamage;
+	public float projectileSpeed;
+	public float projectileLifetime;
 
-	// Use this for initialization
-	void Start () {
-		
+	void Update ()
+	{
+		if (Input.GetKeyDown(KeyCode.Mouse0))
+		{
+			Shoot();
+		}
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+	protected virtual void Shoot () { }
 }
