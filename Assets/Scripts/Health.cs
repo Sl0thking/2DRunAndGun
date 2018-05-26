@@ -11,15 +11,6 @@ public class Health : MonoBehaviour {
 
     public RectTransform healthBar;
 
-<<<<<<< HEAD
-=======
-	
-	// Update is called once per frame
-	void Update () {
-
-    }
-
->>>>>>> 1a72cb6cd75af5cccbae4bd7be53b917fb07306b
     public void TakeDamage(int amount)
     {
         currentHealth -= amount;
