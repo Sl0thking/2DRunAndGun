@@ -16,7 +16,7 @@ public class PlayerController2D : PhysicsObject {
 
     public GameObject weapon;
     private SpriteRenderer weaponRenderer;
-
+    
     private SpriteRenderer spriteRenderer;
     private Animator animator;
 
