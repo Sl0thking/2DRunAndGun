@@ -11,21 +11,17 @@ public class PlayerController2D : PhysicsObject {
     public float maximumSpeed = 7;
 	[Range (1, 20), Tooltip ("Start speed when jumping")]
     public float jumpTakeOffSpeed = 7;
+    [Range (0, 1)]
+    public float horizontalJumpIntensity = 0.7f;
 
-    public float velomultiplier = 0.5f;
-
-    private SpriteRenderer spriteRenderer;
-    private Animator animator;
-
-    private Health playerHealth;
-
+    public GameObject weapon;
+    
+    private Animator animator;  
 
     // Use this for initialization
     void Awake () 
     {
-        spriteRenderer = GetComponent<SpriteRenderer> (); 
         animator = GetComponent<Animator> ();
-        playerHealth = GetComponent<Health>();
     }
 
     protected override void ComputeVelocity()
@@ -36,9 +32,7 @@ public class PlayerController2D : PhysicsObject {
 
         if (!grounded)
         {
-            move.x = move.x * velomultiplier;
-            this.playerHealth.TakeDamage(1);
-            
+            move.x = move.x * horizontalJumpIntensity;
         }
 
         if (Input.GetButtonDown ("Jump") && grounded)
@@ -46,20 +40,23 @@ public class PlayerController2D : PhysicsObject {
             velocity.y = jumpTakeOffSpeed;
         }
 		else if (Input.GetButtonUp ("Jump")) 
-        {
+        {            
             if (velocity.y > 0)
 			{
                 velocity.y = velocity.y * 0.5f;
             }
-        }
+        }        
 
-        bool flipSprite = (spriteRenderer.flipX ? (move.x < 0.01f) : (move.x > 0.01f));
-        if (flipSprite) 
+        var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        if (transform.position.x < mousePos.x && this.transform.rotation.eulerAngles.y == 0)
         {
-            spriteRenderer.flipX = !spriteRenderer.flipX;
+            this.transform.rotation = Quaternion.AngleAxis(180, Vector3.up);
+        }
+        else if (transform.position.x > mousePos.x && this.transform.rotation.eulerAngles.y == 180)
+        {
+            this.transform.rotation = Quaternion.AngleAxis(0, Vector3.up);
         }
 
-        animator.SetBool ("grounded", grounded);
         animator.SetFloat ("velocityX", Mathf.Abs (velocity.x) / maximumSpeed);
 
         targetVelocity = move * maximumSpeed;
