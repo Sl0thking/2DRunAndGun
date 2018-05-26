@@ -176,6 +176,8 @@ public class EnemyBasicBehavior : MonoBehaviour {
             canFlip = false;
             charging = true;
             startChargeTime = Time.time + chargeTime;
+        } else {
+            print("ENTER");
         }
     }
 
