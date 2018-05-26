@@ -1,8 +1,7 @@
 fileFormatVersion: 2
-guid: be3455870aa29214a89594821dc66321
+guid: 7be632c9db1b9a540bfc9dca7848a2f1
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: player_hands_desert_eagle_0
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -39,17 +38,17 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 9
-  spritePivot: {x: 0.6249902, y: 0.26563147}
-  spritePixelsToUnits: 64
-  spriteBorder: {x: 10, y: 12, z: 19, w: 41}
-  spriteGenerateFallbackPhysicsShape: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: 0
+  spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -103,50 +102,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: player_hands_desert_eagle_0
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 13
-        width: 29
-        height: 10
-      alignment: 9
-      pivot: {x: 0.8368535, y: 0.48057786}
-      border: {x: 0, y: 0, z: 0, w: 2}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b59905859eb9d4b45b6384011b318d60
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    outline:
-    - - {x: -9, y: -9}
-      - {x: -12, y: -9}
-      - {x: -12, y: -10}
-      - {x: -22, y: -10}
-      - {x: -22, y: -14}
-      - {x: -20, y: -14}
-      - {x: -20, y: -15}
-      - {x: -15, y: -15}
-      - {x: -15, y: -20}
-      - {x: -5, y: -20}
-      - {x: 9, y: -20}
-      - {x: 9, y: -12}
-      - {x: -7, y: -12}
-      - {x: -7, y: -10}
-      - {x: -7, y: -10}
-      - {x: -7, y: -10}
-      - {x: -7, y: -10}
-      - {x: -7, y: -10}
-      - {x: -9, y: -10}
+    sprites: []
+    outline: []
     physicsShape: []
     bones: []
-    spriteID: a30863384b097a44c883f9e142104aaf
+    spriteID: ca8ce8ab6d5b4184eae8d3af9844b05e
     vertices: []
     indices: 
     edges: []
