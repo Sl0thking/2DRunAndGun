@@ -4,7 +4,7 @@ using UnityEngine;
 
 [RequireComponent (typeof (Animator))]
 [RequireComponent (typeof (SpriteRenderer))]
-public class CharacterController2D : PhysicsObject {
+public class PlayerController2D : PhysicsObject {
 
 	[Header ("Movement")]
 	[Range (1, 20), Tooltip ("Maximum movement speed")]
@@ -48,7 +48,6 @@ public class CharacterController2D : PhysicsObject {
 
         animator.SetBool ("grounded", grounded);
         animator.SetFloat ("velocityX", Mathf.Abs (velocity.x) / maximumSpeed);
-        animator.SetFloat ("velocityY", velocity.y);
 
         targetVelocity = move * maximumSpeed;
     }
