@@ -146,10 +146,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 183268324959f70449670938e943f8b6, type: 3}
+  m_Script: {fileID: 11500000, guid: 552c74919555f4c678ee9bc2cbe29896, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1349690030}
+  boundX: 1.5
+  boundY: 0.5
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
