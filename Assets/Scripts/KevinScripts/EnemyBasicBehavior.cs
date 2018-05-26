@@ -3,17 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyBasicBehavior : MonoBehaviour {
-
-    public float floatHeight;
-    public float liftForce;
-    public float damping;
-    public float keepMinDistance;
+    
+    public float keepMinDistance = 3f;
 
     public GameObject bulletPrefab;
     public Transform bulletSpawn;
 
 
-    public float enemySpeed;
+    public float enemySpeed = 5f;
     Animator enemyAnimator; // needed to change animation states
 
     // viewing
@@ -30,7 +27,7 @@ public class EnemyBasicBehavior : MonoBehaviour {
     bool charging;
     Rigidbody2D enemyRigidbody;
     SpriteRenderer enemySpriteRendere;
-    float playerDistance;
+    public float playerDistance = 10f;
 
 
     Vector3 negativeStartCast;
@@ -45,17 +42,18 @@ public class EnemyBasicBehavior : MonoBehaviour {
         enemyRigidbody = GetComponent<Rigidbody2D>();
         enemySpriteRendere = GetComponent<SpriteRenderer>();
         enemyTransform = GetComponent<Transform>();
-        enemySpeed = 3f;
+
         playerDistance = 10f;
+        enemySpeed = 5f;
         keepMinDistance = 3f;
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
         negativeStartCast = enemyTransform.position;
-        negativeStartCast.x -= 1f;
+        negativeStartCast.x -= 0.2f;
         positveStartCast = enemyTransform.position;
-        positveStartCast.x += 1f;
+        positveStartCast.x += 0.2f;
         negativeEndCast = enemyTransform.position;
         negativeEndCast.x -= playerDistance;
         positveEndCast = enemyTransform.position;
@@ -64,8 +62,8 @@ public class EnemyBasicBehavior : MonoBehaviour {
         Debug.DrawLine (positveStartCast, positveEndCast, Color.yellow);
         Debug.DrawLine (negativeStartCast, negativeEndCast, Color.yellow);
 
-        hit = checkRaycastHit();
-        if (hit.collider != null && hit.collider.tag == "Player"){
+        this.hit = checkRaycastHit();
+        if (this.hit.collider != null && this.hit.collider.tag == "Player"){
             checkCollision();
         } else if (isPlayerInSight()){
             print("PLAYER INSIGHT");
@@ -82,32 +80,32 @@ public class EnemyBasicBehavior : MonoBehaviour {
     public RaycastHit2D checkRaycastHit(){
         if (viewingDirection == ViewingDirectionEnum.LEFT)
         {
-            hit = Physics2D.Linecast(negativeStartCast, negativeEndCast);
+            this.hit = Physics2D.Linecast(negativeStartCast, negativeEndCast);
         }
         else
         {
-            hit = Physics2D.Linecast(positveStartCast, positveEndCast);
+            this.hit = Physics2D.Linecast(positveStartCast, positveEndCast);
         }
-        return hit;
+        return this.hit;
     }
 
     public bool checkCollision()
     {
-        hit = checkRaycastHit();
+        this.hit = checkRaycastHit();
         //print("COlIDER: " + hit.collider + " - " + Time.deltaTime + " - " + hit.point.x + " <=> "+enemyTransform.position.x);
-        if ((hit.point.x < enemyTransform.position.x) && ((enemyTransform.position.x - hit.point.x) > keepMinDistance))
+        if ((this.hit.point.x < enemyTransform.position.x) && ((enemyTransform.position.x - this.hit.point.x) > keepMinDistance))
         {
             float newX = enemySpeed * -1;
             print("move backward - " + newX);
             enemyRigidbody.velocity = new Vector2(newX, enemyRigidbody.velocity.y);
         }
-        else if ((hit.point.x > enemyTransform.position.x) && ((hit.point.x - enemyTransform.position.x) > keepMinDistance))
+        else if ((this.hit.point.x > enemyTransform.position.x) && ((this.hit.point.x - enemyTransform.position.x) > keepMinDistance))
         {
             float newX = enemySpeed;
             print("move forward - " + newX);
             enemyRigidbody.velocity = new Vector2(newX, enemyRigidbody.velocity.y);
         }
-        if (Mathf.Floor(Mathf.Abs(enemyTransform.position.x - hit.point.x)) <= Mathf.Floor(keepMinDistance))
+        if (Mathf.Floor(Mathf.Abs(enemyTransform.position.x - this.hit.point.x)) <= Mathf.Floor(keepMinDistance))
         {
             print("[IN SHOT DISTACE]");
             attack();
@@ -158,20 +156,20 @@ public class EnemyBasicBehavior : MonoBehaviour {
         facingX *= -1f;
         enemySpriteRendere.flipX = !enemySpriteRendere.flipX;
         if (viewingDirection == ViewingDirectionEnum.LEFT){
-            viewingDirection = ViewingDirectionEnum.RIGHT;
+            this.viewingDirection = ViewingDirectionEnum.RIGHT;
         }
         else{
-            viewingDirection = ViewingDirectionEnum.LEFT;
+            this.viewingDirection = ViewingDirectionEnum.LEFT;
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other){
         if (other.tag == "Player"){
             print("PLAYER");
-            if (viewingDirection == ViewingDirectionEnum.RIGHT && 
+            if (this.viewingDirection == ViewingDirectionEnum.RIGHT && 
                 other.transform.position.x < enemyTransform.position.x){
                 flipFacing();
-            } else if(viewingDirection == ViewingDirectionEnum.LEFT &&
+            } else if(this.viewingDirection == ViewingDirectionEnum.LEFT &&
                       other.transform.position.x > enemyTransform.position.x){
                 flipFacing();
             }
