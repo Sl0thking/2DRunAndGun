@@ -42,8 +42,7 @@ public class Projectile : MonoBehaviour
 			var health = other.gameObject.GetComponent<Health>();
 			if (health != null)
 			{
-				int newHealth = health.currentHealth - this.damage;
-				health.currentHealth = newHealth < 0 ? 0 : newHealth;
+				health.TakeDamage(this.damage);
 			}
 
 			Destroy(this.gameObject);
