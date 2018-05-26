@@ -9,6 +9,10 @@ public class EnemyBasicBehavior : MonoBehaviour {
     public float damping;
     public float keepMinDistance;
 
+    public GameObject bulletPrefab;
+    public Transform bulletSpawn;
+
+
     public float enemySpeed;
     Animator enemyAnimator; // needed to change animation states
 
@@ -16,7 +20,7 @@ public class EnemyBasicBehavior : MonoBehaviour {
     public Transform enemyTransform;
     private ViewingDirectionEnum viewingDirectionEnum;
     public bool canFlip = true;
-    ViewingDirectionEnum viewingDirection = ViewingDirectionEnum.LEFT;
+    public ViewingDirectionEnum viewingDirection = ViewingDirectionEnum.LEFT;
     float flipTime = 5f;
     float nextFlipChange = 0f;
 
@@ -33,6 +37,7 @@ public class EnemyBasicBehavior : MonoBehaviour {
     Vector3 positveStartCast;
     Vector3 negativeEndCast;
     Vector3 positveEndCast;
+    RaycastHit2D hit;
 
 
 	// Use this for initialization
@@ -59,23 +64,9 @@ public class EnemyBasicBehavior : MonoBehaviour {
         Debug.DrawLine (positveStartCast, positveEndCast, Color.yellow);
         Debug.DrawLine (negativeStartCast, negativeEndCast, Color.yellow);
 
-        RaycastHit2D hit;
-        if (viewingDirection == ViewingDirectionEnum.LEFT) {
-            hit = Physics2D.Linecast(negativeStartCast, negativeEndCast);
-        } else {
-            hit = Physics2D.Linecast(positveStartCast, positveEndCast);
-        }
+        hit = checkRaycastHit();
         if (hit.collider != null && hit.collider.tag == "Player"){
-            //print("COlIDER: " + hit.collider + " - " + Time.deltaTime + " - " + hit.point.x + " <=> "+enemyTransform.position.x);
-            if ((hit.point.x < enemyTransform.position.x) && ((enemyTransform.position.x - hit.point.x) > keepMinDistance)){
-                float newX = enemySpeed * -1;
-                print("move backward - " + newX);
-                enemyRigidbody.velocity = new Vector2(newX, enemyRigidbody.velocity.y);
-            } else if((hit.point.x > enemyTransform.position.x) && ((hit.point.x - enemyTransform.position.x) > keepMinDistance)){
-                float newX = enemySpeed;
-                print("move forward - " + newX);
-                enemyRigidbody.velocity = new Vector2(newX, enemyRigidbody.velocity.y);
-            }
+            checkCollision();
         } else if (isPlayerInSight()){
             print("PLAYER INSIGHT");
         } else {
@@ -87,6 +78,43 @@ public class EnemyBasicBehavior : MonoBehaviour {
             }
         }
 	}
+
+    public RaycastHit2D checkRaycastHit(){
+        if (viewingDirection == ViewingDirectionEnum.LEFT)
+        {
+            hit = Physics2D.Linecast(negativeStartCast, negativeEndCast);
+        }
+        else
+        {
+            hit = Physics2D.Linecast(positveStartCast, positveEndCast);
+        }
+        return hit;
+    }
+
+    public bool checkCollision()
+    {
+        hit = checkRaycastHit();
+        //print("COlIDER: " + hit.collider + " - " + Time.deltaTime + " - " + hit.point.x + " <=> "+enemyTransform.position.x);
+        if ((hit.point.x < enemyTransform.position.x) && ((enemyTransform.position.x - hit.point.x) > keepMinDistance))
+        {
+            float newX = enemySpeed * -1;
+            print("move backward - " + newX);
+            enemyRigidbody.velocity = new Vector2(newX, enemyRigidbody.velocity.y);
+        }
+        else if ((hit.point.x > enemyTransform.position.x) && ((hit.point.x - enemyTransform.position.x) > keepMinDistance))
+        {
+            float newX = enemySpeed;
+            print("move forward - " + newX);
+            enemyRigidbody.velocity = new Vector2(newX, enemyRigidbody.velocity.y);
+        }
+        if (Mathf.Floor(Mathf.Abs(enemyTransform.position.x - hit.point.x)) <= Mathf.Floor(keepMinDistance))
+        {
+            print("[IN SHOT DISTACE]");
+            attack();
+            return true;
+        }
+        return false;
+    }
 
     bool isPlayerInSight(){
         print("CHECK FOR PLAYER IN SIGHT - BOTH DIRECTIONS");
@@ -104,13 +132,13 @@ public class EnemyBasicBehavior : MonoBehaviour {
 
     bool checkDirection(ViewingDirectionEnum direction) {
         if (direction == ViewingDirectionEnum.LEFT){
-            RaycastHit2D hit = Physics2D.Linecast(negativeStartCast, negativeEndCast);
-            if (hit.collider != null && hit.collider.tag == "Player"){
+            RaycastHit2D currenthit = Physics2D.Linecast(negativeStartCast, negativeEndCast);
+            if (currenthit.collider != null && currenthit.collider.tag == "Player"){
                 return true;
             }
         } else if (direction == ViewingDirectionEnum.RIGHT) {
-            RaycastHit2D hit = Physics2D.Linecast(positveStartCast, positveEndCast);
-            if (hit.collider != null && hit.collider.tag == "Player"){
+            RaycastHit2D currenthit = Physics2D.Linecast(positveStartCast, positveEndCast);
+            if (currenthit.collider != null && currenthit.collider.tag == "Player"){
                 return true;
             }
         }
@@ -135,7 +163,6 @@ public class EnemyBasicBehavior : MonoBehaviour {
         else{
             viewingDirection = ViewingDirectionEnum.LEFT;
         }
-        print("CURRENT VIEWDIRECTION: " + viewingDirection);
     }
 
     private void OnTriggerEnter2D(Collider2D other){
@@ -162,5 +189,9 @@ public class EnemyBasicBehavior : MonoBehaviour {
 
     private void OnTriggerExit2D(Collider2D collision){
         canFlip = true;
+    }
+
+    void attack(){
+        print("[SHOT]");
     }
 }
