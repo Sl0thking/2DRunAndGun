@@ -36,6 +36,7 @@ GameObject:
   - component: {fileID: 4097110950615196}
   - component: {fileID: 212161348845066640}
   - component: {fileID: 114188666523800830}
+  - component: {fileID: 114690494655423152}
   m_Layer: 0
   m_Name: Desert Eagle
   m_TagString: Untagged
@@ -81,11 +82,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea8bd279d011588409ab13e9296f6f7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ammunitionPercentageUpdate:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: RunAndGun2D.CustomEvents.UnityEventFloat, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  magazineSize: 0
+  shootCooldown: 0
+  reloadTime: 0
+  weaponShotSound: {fileID: 0}
+  weaponReloadSound: {fileID: 0}
   projectilePrefab: {fileID: 1455783954194866, guid: 2a7aeb116fd6d444ab7287249018eca8,
     type: 2}
   projectileDamage: 10
   projectileSpeed: 10
   projectileLifetime: 10
+  ammunitionCount: 0
+--- !u!114 &114690494655423152
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1337430218389726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d026a8c2422d00f4a83aa9d5275248d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212161348845066640
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -120,7 +143,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 8
   m_Sprite: {fileID: 21300000, guid: be3455870aa29214a89594821dc66321, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

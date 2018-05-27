@@ -13,14 +13,69 @@ public class PlayerController2D : PhysicsObject {
     [Range (0, 1)]
     public float horizontalJumpIntensity = 0.7f;
 
-    public Weapon weapon;
+    public List<GameObject> weaponPrefabs;
+
+    public List<Weapon> weaponList;
+
+    private int activeWeaponIndex = 0;
 
     private Animator animator;  
 
     void Awake () 
     {
         animator = GetComponent<Animator> ();
+        createWeapons();
     }
+
+    public void createWeapons()
+    {
+        for (int i = 0; i < weaponPrefabs.Count;i++)
+        {
+            if (weaponPrefabs[i] != null)
+            {
+                GameObject weaponInstance = Instantiate(weaponPrefabs[i], this.transform.Find("WeaponAnchor").position, this.transform.Find("WeaponAnchor").rotation);
+                weaponInstance.transform.parent = this.transform;
+                weaponList.Add(weaponInstance.GetComponent<Weapon>());
+                if (i != 0)
+                {
+                    weaponInstance.SetActive(false);
+                }
+            }
+        }
+        activeWeaponIndex = 0;
+    }
+
+    private void switchWeapon(int weaponIdx)
+    {
+        if (weaponIdx < weaponList.Count)
+        {
+            getActiveWeapon().gameObject.SetActive(false);
+            activeWeaponIndex = weaponIdx;
+            getActiveWeapon().gameObject.SetActive(true);
+        }
+
+    }
+
+    protected override void additionalUpdate()
+    {
+        base.additionalUpdate();
+        //Select Weapon 1
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            switchWeapon(0);
+        }
+        //Select Weapon 2
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            switchWeapon(1);
+        }
+        //Select Weapon 3
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            switchWeapon(2);
+        }
+    }
+
 
     protected override void ComputeVelocity()
     {
@@ -58,5 +113,10 @@ public class PlayerController2D : PhysicsObject {
         animator.SetFloat ("velocityX", Mathf.Abs (velocity.x) / maximumSpeed);
 
         targetVelocity = move * maximumSpeed;
+    }
+
+    public Weapon getActiveWeapon()
+    {
+        return weaponList[activeWeaponIndex];
     }
 }

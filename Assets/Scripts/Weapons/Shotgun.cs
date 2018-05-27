@@ -8,6 +8,17 @@ public class Shotgun : Weapon {
     public int ProjectileCount = 8;
     public float ShotSpread = 30f;
 
+    private void Awake()
+    {
+        this.magazineSize = 2;
+        this.shootCooldown = 1f;
+        this.reloadTime = 2f;
+
+        this.projectileDamage = 7;
+        this.projectileSpeed = 10;
+        this.projectileLifetime = 0.3f;
+    }
+
     protected override void Shoot()
     {
         for (int i = 0; i < ProjectileCount; i++)

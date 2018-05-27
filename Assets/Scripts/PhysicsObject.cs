@@ -35,8 +35,11 @@ public class PhysicsObject : MonoBehaviour {
     void Update () 
     {
         targetVelocity = Vector2.zero;
-        ComputeVelocity (); 
+        ComputeVelocity ();
+        additionalUpdate();
     }
+
+    protected virtual void additionalUpdate() { }
 
     protected virtual void ComputeVelocity()
     {

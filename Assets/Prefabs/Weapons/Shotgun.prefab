@@ -95,20 +95,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ammunitionPercentageUpdate:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: updateAmmunition
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: RunAndGun2D.CustomEvents.UnityEventFloat, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   magazineSize: 2
   shootCooldown: 1
   reloadTime: 2
+  weaponShotSound: {fileID: 0}
+  weaponReloadSound: {fileID: 0}
   projectilePrefab: {fileID: 1120408022448384, guid: 7277db0ec1c0e2b41ab502114d000037,
     type: 2}
   projectileDamage: 10
   projectileSpeed: 10
-  projectileLifetime: 10
+  projectileLifetime: 0.3
   ammunitionCount: 0
   ProjectileCount: 8
-  ShotSpread: 45
+  ShotSpread: 30
 --- !u!212 &212599073835340882
 SpriteRenderer:
   m_ObjectHideFlags: 1
