@@ -113,6 +113,236 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &99041553
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 157.19818
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -44.184334
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.049720272
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1576952841654766, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_Name
+      value: DuckEnemy (18)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &117563273
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 167.7344
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -66.25369
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.049720272
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1576952841654766, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_Name
+      value: DuckEnemy (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &128195154
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 58.71181
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -53.2446
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.049720272
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 1576952841654766, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_Name
+      value: DuckEnemy (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &176429803
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 152.07373
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -66.22452
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.049720272
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1576952841654766, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_Name
+      value: DuckEnemy (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &375394615
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 68.572334
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -62.150993
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.049720272
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1576952841654766, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_Name
+      value: DuckEnemy (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &429229047
 Prefab:
   m_ObjectHideFlags: 0
@@ -150,7 +380,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4340568424521098, guid: 4367569992b13be4ebb76df6c5b978e0, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 26
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4367569992b13be4ebb76df6c5b978e0, type: 2}
@@ -166,6 +396,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -243,6 +474,101 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &519420033
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: bb09e4f0f262eda4ea84966cdf981b2a, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &620459747
 Prefab:
   m_ObjectHideFlags: 0
@@ -288,7 +614,7 @@ Prefab:
     - target: {fileID: 224170158772204976, guid: 7304a0bbb8053844ba5f1644dff36fea,
         type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 224170158772204976, guid: 7304a0bbb8053844ba5f1644dff36fea,
         type: 2}
@@ -389,7 +715,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4157406173170854, guid: 6064dc850a0214a4ea7549af4f9024df, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 114681772431341472, guid: 6064dc850a0214a4ea7549af4f9024df,
         type: 2}
@@ -404,6 +730,190 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6064dc850a0214a4ea7549af4f9024df, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &793402987
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 67.31646
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -52.253777
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.049720272
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1576952841654766, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_Name
+      value: DuckEnemy (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &796315019
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 154.77293
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -66.24759
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.049720272
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1576952841654766, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_Name
+      value: DuckEnemy (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &921398408
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 76.49737
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -62.18474
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.049720272
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1576952841654766, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_Name
+      value: DuckEnemy (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &926095747
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 63.041748
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -62.218437
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.049720272
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1576952841654766, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_Name
+      value: DuckEnemy (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1079578590
 Prefab:
   m_ObjectHideFlags: 0
@@ -413,11 +923,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4430887643224870, guid: 53522c3636d6b15449a920b6b81a4348, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 18.035648
+      value: 35.36
       objectReference: {fileID: 0}
     - target: {fileID: 4430887643224870, guid: 53522c3636d6b15449a920b6b81a4348, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -56.384
+      value: -51.26
       objectReference: {fileID: 0}
     - target: {fileID: 4430887643224870, guid: 53522c3636d6b15449a920b6b81a4348, type: 2}
       propertyPath: m_LocalPosition.z
@@ -441,10 +951,328 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4430887643224870, guid: 53522c3636d6b15449a920b6b81a4348, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 53522c3636d6b15449a920b6b81a4348, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1108633197
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 156.42366
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -54.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.049720272
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1576952841654766, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_Name
+      value: DuckEnemy (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1281017879
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 96.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -57.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.049720272
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1576952841654766, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_Name
+      value: DuckEnemy (22)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1424698478
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 89.752304
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -47.222023
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.049720272
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1576952841654766, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_Name
+      value: DuckEnemy (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1430092701
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 195.5883
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -68.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.049720272
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1576952841654766, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_Name
+      value: DuckEnemy (16)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1498525284
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 132.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -58.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.049720272
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1576952841654766, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_Name
+      value: DuckEnemy (19)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1502763655
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 31.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -54.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.049720272
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_RootOrder
+      value: 23
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1548290852
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 155.16011
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -44.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.049720272
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1576952841654766, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_Name
+      value: DuckEnemy (17)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1549475665 stripped
 Transform:
@@ -457,3 +1285,325 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 620459747}
   m_Script: {fileID: 11500000, guid: 564d9a729754f4744a258bcf5ba463aa, type: 3}
+--- !u!1001 &1682400774
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 66.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -52.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.049720272
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1576952841654766, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_Name
+      value: DuckEnemy (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1724376586
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 192.73712
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -68.16491
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.049720272
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1576952841654766, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_Name
+      value: DuckEnemy (14)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1737414464
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 103.40069
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -63.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.049720272
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1576952841654766, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_Name
+      value: DuckEnemy (20)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1753512396
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 51.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -56.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.049720272
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1576952841654766, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_Name
+      value: DuckEnemy (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1938481342
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 97.74271
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -65.26483
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.049720272
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1576952841654766, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_Name
+      value: DuckEnemy (21)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &2075905435
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 87.827644
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -47.209644
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.049720272
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1576952841654766, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_Name
+      value: DuckEnemy (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &2143577548
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 194.08438
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -68.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.049720272
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030776658075530, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1576952841654766, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+      propertyPath: m_Name
+      value: DuckEnemy (15)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d1c025bd6ff97422b8608d1c94b25fb2, type: 2}
+  m_IsPrefabParent: 0
