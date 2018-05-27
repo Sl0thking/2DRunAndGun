@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 50570687920453192}
   - component: {fileID: 95248919520849964}
   - component: {fileID: 70191732012229874}
-  - component: {fileID: 114480459039874558}
+  - component: {fileID: 114681772431341472}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -169,16 +169,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea8bd279d011588409ab13e9296f6f7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ammunitionPercentageUpdate:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: updateAmmunition
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: RunAndGun2D.CustomEvents.UnityEventFloat, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   magazineSize: 6
   shootCooldown: 0.5
   reloadTime: 5
   projectilePrefab: {fileID: 1455783954194866, guid: 2a7aeb116fd6d444ab7287249018eca8,
     type: 2}
   projectileDamage: 10
-  projectileSpeed: 10
+  projectileSpeed: 15
   projectileLifetime: 10
   ammunitionCount: 0
---- !u!114 &114480459039874558
+--- !u!114 &114681772431341472
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -189,8 +205,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f4e3ad5c7ee0254799e10164c92c550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthPercentageUpdate:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: updateHealth
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: RunAndGun2D.CustomEvents.UnityEventFloat, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  maxHealth: 100
   currentHealth: 100
-  healthBar: {fileID: 0}
 --- !u!114 &114948356268686090
 MonoBehaviour:
   m_ObjectHideFlags: 1

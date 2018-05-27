@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 50356204906082498}
   - component: {fileID: 114753260572569388}
   m_Layer: 0
-  m_Name: TurtelEnemy 1
+  m_Name: TurtelEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
