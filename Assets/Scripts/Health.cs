@@ -1,16 +1,20 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.EventSystems;
+using RunAndGun2D.CustomEvents;
 
-public class Health : MonoBehaviour {
+public class Health : MonoBehaviour
+{
+    [Header ("Events")]
+	public UnityEventFloat healthPercentageUpdate;
 
-    public const int maxHealth = 100;
-    public int currentHealth = maxHealth;
+    [Header ("Attributes")]
+    public int maxHealth = 100;
+    public int currentHealth;
 
-    public RectTransform healthBar;
+    void Start()
+    {
+        currentHealth = maxHealth;
+    }
 
     public void TakeDamage(int amount)
     {
@@ -28,8 +32,8 @@ public class Health : MonoBehaviour {
                 Destroy(this.gameObject);
             }
         }
-        if (this.transform.root.tag == "Player") {
-            healthBar.sizeDelta = new Vector2((int)400*(currentHealth/100f), healthBar.sizeDelta.y);
-        }
+
+        // Notify UI about change of health percentage
+        healthPercentageUpdate.Invoke((float) currentHealth / maxHealth);
     }
 }

@@ -1,10 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.EventSystems;
+﻿using UnityEngine;
+using RunAndGun2D.CustomEvents;
 
 public class Weapon : MonoBehaviour
 {
+	[Header ("Events")]
+	public UnityEventFloat ammunitionPercentageUpdate;
+
 	[Header ("Weapon")]
 	public int magazineSize;
 	public float shootCooldown;
@@ -36,40 +37,43 @@ public class Weapon : MonoBehaviour
 		{
 			shootTimer -= Time.deltaTime;
 		}
+
 		if (reloadTimer > 0)
 		{
 			reloadTimer -= Time.deltaTime;
 		}
 
+		if (reloadTimer <= 0 && ammunitionCount == 0)
+		{
+			ammunitionCount = magazineSize;
+
+			// Notify UI about change of ammunition percentage
+			ammunitionPercentageUpdate.Invoke(GetAmmunitionPercentage());
+		}
+
 		if (Input.GetKeyDown(KeyCode.Mouse0))
 		{
-			if (ammunitionCount > 0)
+			if (shootTimer <= 0 && ammunitionCount > 0)
 			{
-				if (shootTimer <= 0)
+				Shoot();
+				ammunitionCount--;
+				shootTimer = shootCooldown;					
+
+				// Notify UI about change of ammunition percentage
+				ammunitionPercentageUpdate.Invoke(GetAmmunitionPercentage());
+
+				if (ammunitionCount == 0)
 				{
-					Shoot();
-					ammunitionCount--;
-					shootTimer = shootCooldown;					
-
-					// EDIT: notify UI "bullet shot"
-					// notify UI
-
-
-					if (ammunitionCount == 0)
-					{
-						reloadTimer = reloadTime;
-					}
+					reloadTimer = reloadTime;
 				}			
-			}
-			else
-			{
-				if (reloadTimer <= 0)
-				{
-					ammunitionCount = magazineSize;
-				}
 			}
 		}
 	}
 
-	protected virtual void Shoot () { }
+	protected virtual void Shoot() { }
+
+	private float GetAmmunitionPercentage()
+	{
+		return (float) ammunitionCount / magazineSize;
+	}
 }
