@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
 public class EnemyBasicBehavior : MonoBehaviour {
     
     public float keepMinDistance = 3f;
@@ -13,10 +14,13 @@ public class EnemyBasicBehavior : MonoBehaviour {
     public float enemySpeed = 5f;
     Animator enemyAnimator; // needed to change animation states
 
+    private Animator animator;
+
     // viewing
     public Transform enemyTransform;
     private ViewingDirectionEnum viewingDirectionEnum;
     public bool canFlip = true;
+    public bool canMove = true;
     public ViewingDirectionEnum viewingDirection = ViewingDirectionEnum.LEFT;
     float flipTime = 5f;
     float nextFlipChange = 0f;
@@ -37,8 +41,14 @@ public class EnemyBasicBehavior : MonoBehaviour {
     RaycastHit2D hit;
 
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
+
+    // Use this for initialization
+    void Start () {
         enemyRigidbody = GetComponent<Rigidbody2D>();
         enemySpriteRendere = GetComponent<SpriteRenderer>();
         enemyTransform = GetComponent<Transform>();
@@ -63,7 +73,8 @@ public class EnemyBasicBehavior : MonoBehaviour {
         Debug.DrawLine (negativeStartCast, negativeEndCast, Color.yellow);
 
         this.hit = checkRaycastHit();
-        if (this.hit.collider != null && this.hit.collider.tag == "Player"){
+        if (this.hit.collider != null && this.hit.collider.tag == "Player")
+        {
             checkCollision();
         } else if (isPlayerInSight()){
             print("PLAYER INSIGHT");
@@ -111,6 +122,7 @@ public class EnemyBasicBehavior : MonoBehaviour {
             attack();
             return true;
         }
+        animator.SetFloat("velocityX", enemyRigidbody.velocity.x);
         return false;
     }
 
@@ -174,6 +186,7 @@ public class EnemyBasicBehavior : MonoBehaviour {
                 flipFacing();
             }
             canFlip = false;
+            animator.SetBool("hasShot", true);
             charging = true;
             startChargeTime = Time.time + chargeTime;
         } else {
@@ -192,6 +205,7 @@ public class EnemyBasicBehavior : MonoBehaviour {
     }
 
     void attack(){
+        
         print("[SHOT]");
     }
 }
