@@ -75,10 +75,9 @@ public class EnemyBasicBehavior : MonoBehaviour {
         this.hit = checkRaycastHit();
         if (this.hit.collider != null && this.hit.collider.tag == "Player")
         {
-            //print(this.hit.collider.transform.gameObject.name);
             checkCollision();
         } else if (isPlayerInSight()){
-            //print("PLAYER INSIGHT");
+            print("PLAYER INSIGHT");
         } else {
             if (Time.time > nextFlipChange) {
                 if (Random.Range(0, 10) >= 5){
@@ -93,14 +92,10 @@ public class EnemyBasicBehavior : MonoBehaviour {
         if (viewingDirection == ViewingDirectionEnum.LEFT)
         {
             this.hit = Physics2D.Linecast(negativeStartCast, negativeEndCast);
-            //this.hit = Physics2D.Raycast(negativeStartCast, this.transform.right * -1 * 5f);
-            //Debug.DrawRay(negativeStartCast, this.transform.right * -1 * 5f, Color.red);
         }
         else
         {
             this.hit = Physics2D.Linecast(positveStartCast, positveEndCast);
-            //this.hit = Physics2D.Raycast(positveStartCast, this.transform.right * -1 * 5f);
-            //Debug.DrawRay(negativeStartCast, this.transform.right * 5f, Color.red);
         }
         return this.hit;
     }
@@ -112,18 +107,18 @@ public class EnemyBasicBehavior : MonoBehaviour {
         if ((this.hit.point.x < enemyTransform.position.x) && ((enemyTransform.position.x - this.hit.point.x) > keepMinDistance))
         {
             float newX = enemySpeed * -1;
-            //print("move backward - " + newX);
+            print("move backward - " + newX);
             enemyRigidbody.velocity = new Vector2(newX, enemyRigidbody.velocity.y);
         }
         else if ((this.hit.point.x > enemyTransform.position.x) && ((this.hit.point.x - enemyTransform.position.x) > keepMinDistance))
         {
             float newX = enemySpeed;
-            //print("move forward - " + newX);
+            print("move forward - " + newX);
             enemyRigidbody.velocity = new Vector2(newX, enemyRigidbody.velocity.y);
         }
         if (Mathf.Floor(Mathf.Abs(enemyTransform.position.x - this.hit.point.x)) <= Mathf.Floor(keepMinDistance))
         {
-            //print("[IN SHOT DISTACE]");
+            print("[IN SHOT DISTACE]");
             attack();
             return true;
         }
@@ -132,7 +127,7 @@ public class EnemyBasicBehavior : MonoBehaviour {
     }
 
     bool isPlayerInSight(){
-        //print("CHECK FOR PLAYER IN SIGHT - BOTH DIRECTIONS");
+        print("CHECK FOR PLAYER IN SIGHT - BOTH DIRECTIONS");
         if (checkDirection(ViewingDirectionEnum.LEFT)){
             flipViewingDirection();
             //viewingDirection = ViewingDirectionEnum.LEFT;
@@ -182,7 +177,7 @@ public class EnemyBasicBehavior : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other){
         if (other.tag == "Player"){
-            //print("PLAYER");
+            print("PLAYER");
             if (this.viewingDirection == ViewingDirectionEnum.RIGHT && 
                 other.transform.position.x < enemyTransform.position.x){
                 flipFacing();
@@ -194,13 +189,13 @@ public class EnemyBasicBehavior : MonoBehaviour {
             charging = true;
             startChargeTime = Time.time + chargeTime;
         } else {
-            //print("ENTER");
+            print("ENTER");
         }
     }
 
     private void OnTriggerStay2D(Collider2D other){
         if (other.tag == "Player"){
-            //print("PLAYER - HIT");
+            print("PLAYER - HIT");
         }
     }
 
@@ -210,6 +205,6 @@ public class EnemyBasicBehavior : MonoBehaviour {
 
     void attack(){
         
-        //print("[SHOT]");
+        print("[SHOT]");
     }
 }
