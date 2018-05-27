@@ -58,6 +58,7 @@ GameObject:
   - component: {fileID: 212673730435610990}
   - component: {fileID: 114264099527803132}
   - component: {fileID: 82154523155218086}
+  - component: {fileID: 114702656698018542}
   m_Layer: 0
   m_Name: Desert Eagle
   m_TagString: Untagged
@@ -226,7 +227,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -283,7 +284,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   magazineSize: 6
   shootCooldown: 0.5
-  reloadTime: 5
+  reloadTime: 2
   weaponShotSound: {fileID: 8300000, guid: 2203773368e4340d98c114f55c2dd7fd, type: 3}
   weaponReloadSound: {fileID: 8300000, guid: e5198250a6a57408bb36e14bc4a322c4, type: 3}
   projectilePrefab: {fileID: 1455783954194866, guid: 2a7aeb116fd6d444ab7287249018eca8,
@@ -321,6 +322,17 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   maxHealth: 100
   currentHealth: 100
+--- !u!114 &114702656698018542
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1990625180006362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d026a8c2422d00f4a83aa9d5275248d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114948356268686090
 MonoBehaviour:
   m_ObjectHideFlags: 1
