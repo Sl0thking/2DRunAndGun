@@ -8,7 +8,7 @@ public class shotProjectile : MonoBehaviour {
     GameObject projectileGO;
     public Vector2 velocity;
     bool canShot = true;
-    public Vector2 offset = new Vector2(0.4f,0.1f);
+    public Vector2 offset = new Vector2(2.4f,-2.5f);
     public EnemyBasicBehavior enemyBehavior;
     public float cooldown = 4f;
     float direction = 1;
@@ -30,6 +30,8 @@ public class shotProjectile : MonoBehaviour {
             projectileGO = (GameObject) Instantiate(projectile, (Vector2) transform.position + offset * direction, Quaternion.identity);
             projectileGO.GetComponent<Rigidbody2D>().velocity = new Vector2(direction * bulletSpeed, velocity.y);
             StartCoroutine(canShoot());
+
+            Destroy(projectileGO, 10);
         }
 		
 	}
@@ -40,8 +42,7 @@ public class shotProjectile : MonoBehaviour {
         canShot = true;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
+    private void OnTriggerEnter2D(Collider2D collision){
         print("________________________ENTER_______________________");
     }
 }

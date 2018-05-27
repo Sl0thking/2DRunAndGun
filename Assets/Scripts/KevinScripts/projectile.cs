@@ -7,7 +7,7 @@ public class projectile : MonoBehaviour {
     public Vector2 velocity;
     float direction = 1;
     float speed = 5;
-    public float damage = 10;
+    public int damage = 10;
 
 	// Use this for initialization
 	void Start () {
@@ -25,10 +25,11 @@ public class projectile : MonoBehaviour {
         } else {
             PlayerController2D playerContr = (PlayerController2D) collision.gameObject.GetComponent<PlayerController2D>();
             try{
-                //playerContr.takeDamage(damage);
-                //if (playerContr.getHealth() >= 0){
-                    Destroy(collision.gameObject);
-                //}
+                Health health = playerContr.GetComponent<Health>();
+                if (health != null){
+                    health.TakeDamage(this.damage);
+                }
+                Destroy(this.gameObject);
             } catch(UnityException){}
             Explode();
         }
