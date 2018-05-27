@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent (typeof (Animator))]
-[RequireComponent (typeof (SpriteRenderer))]
 public class PlayerController2D : PhysicsObject {
 
 	[Header ("Movement")]
@@ -18,7 +17,6 @@ public class PlayerController2D : PhysicsObject {
 
     private Animator animator;  
 
-    // Use this for initialization
     void Awake () 
     {
         animator = GetComponent<Animator> ();

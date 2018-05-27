@@ -9,6 +9,8 @@ public class Health : MonoBehaviour
 
     [Header ("Attributes")]
     public int maxHealth = 100;
+
+    [HideInInspector]
     public int currentHealth;
 
     void Start()
