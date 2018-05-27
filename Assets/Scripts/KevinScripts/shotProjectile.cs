@@ -10,7 +10,8 @@ public class shotProjectile : MonoBehaviour {
     bool canShot = true;
     public Vector2 offset = new Vector2(2.4f,-2.5f);
     public EnemyBasicBehavior enemyBehavior;
-    public float cooldown = 4f;
+    public float cooldown = 10f;
+    private float currCooldown = 0f;
     float direction = 1;
     public float bulletSpeed = 5;
 
@@ -20,6 +21,13 @@ public class shotProjectile : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        canShot = false;
+        currCooldown += Time.deltaTime;
+        if (currCooldown >= cooldown)
+        {
+            canShot = true;
+            currCooldown = 0f;
+        }
         if(enemyBehavior.checkCollision() && canShot){
             if (enemyBehavior.viewingDirection == ViewingDirectionEnum.LEFT){
                 direction = -1;
@@ -30,18 +38,19 @@ public class shotProjectile : MonoBehaviour {
             print("[SHOT PROJECTILE] " + transform.localScale.x + " - " + enemyBehavior.viewingDirection);
             projectileGO = (GameObject) Instantiate(projectile, (Vector2) transform.position + offset * direction, Quaternion.identity);
             projectileGO.GetComponent<Rigidbody2D>().velocity = new Vector2(direction * bulletSpeed, velocity.y);
-            StartCoroutine(canShoot());
+            //StartCoroutine(canShoot());
 
             Destroy(projectileGO, 10);
         }
 		
 	}
 
+    /*
     IEnumerator canShoot(){
         canShot = false;
         yield return new WaitForSeconds(cooldown);
         canShot = true;
-    }
+    } */
 
     private void OnTriggerEnter2D(Collider2D collision){
         print("________________________ENTER_______________________");
