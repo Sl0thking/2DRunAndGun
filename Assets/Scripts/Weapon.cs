@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using RunAndGun2D.CustomEvents;
 
+[RequireComponent (typeof(AudioSource))]
 public class Weapon : MonoBehaviour
 {
 	[Header ("Events")]
@@ -10,8 +11,12 @@ public class Weapon : MonoBehaviour
 	public int magazineSize;
 	public float shootCooldown;
 	public float reloadTime;
+    public AudioClip weaponShotSound;
+    public AudioClip weaponReloadSound;
+    private AudioSource source;
 
-	[Header ("Projectile")]
+
+    [Header ("Projectile")]
 	public GameObject projectilePrefab;
 	public int projectileDamage;
 	public float projectileSpeed;
@@ -25,6 +30,7 @@ public class Weapon : MonoBehaviour
 
 	void Start()
 	{
+        source = GetComponent<AudioSource>();
 		ammunitionCount = magazineSize;
 		shootTimer = 0;
 		reloadTimer = 0;
@@ -46,17 +52,19 @@ public class Weapon : MonoBehaviour
 		if (reloadTimer <= 0 && ammunitionCount == 0)
 		{
 			ammunitionCount = magazineSize;
+            source.PlayOneShot(weaponReloadSound, 1F);
 
-			// Notify UI about change of ammunition percentage
-			ammunitionPercentageUpdate.Invoke(GetAmmunitionPercentage());
+            // Notify UI about change of ammunition percentage
+            ammunitionPercentageUpdate.Invoke(GetAmmunitionPercentage());
 		}
 
 		if (Input.GetKeyDown(KeyCode.Mouse0))
 		{
 			if (shootTimer <= 0 && ammunitionCount > 0)
 			{
-				Shoot();
-				ammunitionCount--;
+                source.PlayOneShot(weaponShotSound, 1F);
+                Shoot();
+                ammunitionCount--;
 				shootTimer = shootCooldown;					
 
 				// Notify UI about change of ammunition percentage
