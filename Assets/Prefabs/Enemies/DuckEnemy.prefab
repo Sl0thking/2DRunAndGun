@@ -164,7 +164,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: RunAndGun2D.CustomEvents.UnityEventFloat, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  maxHealth: 100
+  maxHealth: 40
   currentHealth: 100
 --- !u!212 &212787277276522910
 SpriteRenderer:

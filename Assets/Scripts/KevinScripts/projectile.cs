@@ -20,8 +20,8 @@ public class projectile : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision){
 
-        if(collision.collider.tag != "Player"){
-            print("COLLISION WITH SOMETHING != PLAYER");
+        if(collision.collider.tag != "Player" && collision.collider.tag != "Enemy") {
+            Explode();
         } else {
             PlayerController2D playerContr = (PlayerController2D) collision.gameObject.GetComponent<PlayerController2D>();
             try{
@@ -36,7 +36,6 @@ public class projectile : MonoBehaviour {
     }
 
     void Explode(){
-        print("DESTROY");
         Destroy(this.gameObject);
     }
 }
