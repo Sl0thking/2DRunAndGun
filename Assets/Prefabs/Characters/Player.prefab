@@ -71,7 +71,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1226448879221934}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.241, y: 5.632, z: 0}
+  m_LocalPosition: {x: 12.57, y: -58.21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4297983710407058}
@@ -203,9 +203,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minGroundNormalY: 0.65
-  gravityModifier: 1
+  gravityModifier: 2
   maximumSpeed: 7
-  jumpTakeOffSpeed: 7
+  jumpTakeOffSpeed: 12
   horizontalJumpIntensity: 0.7
   weapon: {fileID: 114264099527803132}
 --- !u!212 &212610557019694218
