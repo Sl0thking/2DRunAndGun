@@ -19,8 +19,7 @@ public class EnemyController2D : PhysicsObject {
 	{
 		Vector2 move = Vector2.zero;
 
-		print("debug.drawray");
-
+		Transform enemy = GetEnemyInDistance();
 
         targetVelocity = move;
 	}
@@ -29,9 +28,14 @@ public class EnemyController2D : PhysicsObject {
 	{
 		Transform enemy = null;
 
-		
+		RaycastHit2D rightHit = Physics2D.Raycast(this.transform.position, this.transform.right, LayerMask.GetMask("Player"));
+		RaycastHit2D leftHit = Physics2D.Raycast(this.transform.position, this.transform.right, LayerMask.GetMask("Player"));
+
+		print(rightHit.transform.gameObject.name);
+		print(leftHit.transform.gameObject.name);
+
 		Debug.DrawRay(this.transform.position, this.transform.right * -1 * viewDistance, Color.red);
-		Debug.DrawRay(this.transform.position, this.transform.right * viewDistance, Color.red);
+		Debug.DrawRay(this.transform.position, this.transform.right * viewDistance, Color.green);
 
 
 		return enemy;
