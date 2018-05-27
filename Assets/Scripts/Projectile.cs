@@ -5,9 +5,8 @@ using UnityEngine;
 [RequireComponent (typeof (Rigidbody2D))]
 public class Projectile : MonoBehaviour
 {
-
-	private int damage = 10;
-	private float travelSpeed = 10f;
+	private int damage;
+	private float travelSpeed;
 
 	private GameObject instantiator;
 	private Rigidbody2D rigidBody;

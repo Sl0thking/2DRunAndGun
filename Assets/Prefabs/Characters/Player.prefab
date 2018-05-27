@@ -169,11 +169,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea8bd279d011588409ab13e9296f6f7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  magazineSize: 6
+  shootCooldown: 0.5
+  reloadTime: 5
   projectilePrefab: {fileID: 1455783954194866, guid: 2a7aeb116fd6d444ab7287249018eca8,
     type: 2}
   projectileDamage: 10
   projectileSpeed: 10
   projectileLifetime: 10
+  ammunitionCount: 0
 --- !u!114 &114480459039874558
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -203,7 +207,7 @@ MonoBehaviour:
   maximumSpeed: 7
   jumpTakeOffSpeed: 7
   horizontalJumpIntensity: 0.7
-  weapon: {fileID: 1990625180006362}
+  weapon: {fileID: 114264099527803132}
 --- !u!212 &212610557019694218
 SpriteRenderer:
   m_ObjectHideFlags: 1

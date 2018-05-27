@@ -14,8 +14,8 @@ public class PlayerController2D : PhysicsObject {
     [Range (0, 1)]
     public float horizontalJumpIntensity = 0.7f;
 
-    public GameObject weapon;
-    
+    public Weapon weapon;
+
     private Animator animator;  
 
     // Use this for initialization
