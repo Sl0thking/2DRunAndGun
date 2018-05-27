@@ -14,7 +14,7 @@ public class EnemyBasicBehavior : MonoBehaviour {
     public float enemySpeed = 5f;
     Animator enemyAnimator; // needed to change animation states
 
-    private Animator animator;
+    public Animator animator;
 
     // viewing
     public Transform enemyTransform;
@@ -186,7 +186,6 @@ public class EnemyBasicBehavior : MonoBehaviour {
                 flipFacing();
             }
             canFlip = false;
-            animator.SetBool("hasShot", true);
             charging = true;
             startChargeTime = Time.time + chargeTime;
         } else {

@@ -26,6 +26,7 @@ public class shotProjectile : MonoBehaviour {
             } else if (enemyBehavior.viewingDirection == ViewingDirectionEnum.RIGHT){
                 direction = 1;
             }
+            enemyBehavior.animator.SetTrigger("hasShot");
             print("[SHOT PROJECTILE] " + transform.localScale.x + " - " + enemyBehavior.viewingDirection);
             projectileGO = (GameObject) Instantiate(projectile, (Vector2) transform.position + offset * direction, Quaternion.identity);
             projectileGO.GetComponent<Rigidbody2D>().velocity = new Vector2(direction * bulletSpeed, velocity.y);

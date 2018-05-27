@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 61258306197903432}
   - component: {fileID: 50724291715205330}
   - component: {fileID: 114415278992960440}
+  - component: {fileID: 95366168243614212}
   m_Layer: 0
   m_Name: DuckEnemy
   m_TagString: Enemy
@@ -90,6 +91,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.51076984, y: 0.5562744}
   m_EdgeRadius: 0
+--- !u!95 &95366168243614212
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1576952841654766}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f02d9d343a5186943b16087a1530e296, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114415278992960440
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -122,8 +141,10 @@ MonoBehaviour:
   bulletPrefab: {fileID: 0}
   bulletSpawn: {fileID: 0}
   enemySpeed: 2.64
+  animator: {fileID: 0}
   enemyTransform: {fileID: 4030776658075530}
   canFlip: 1
+  canMove: 1
   viewingDirection: 0
   chargeTime: 0
   playerDistance: 7.92
@@ -138,8 +159,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f4e3ad5c7ee0254799e10164c92c550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthPercentageUpdate:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: RunAndGun2D.CustomEvents.UnityEventFloat, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  maxHealth: 100
   currentHealth: 100
-  healthBar: {fileID: 0}
 --- !u!212 &212787277276522910
 SpriteRenderer:
   m_ObjectHideFlags: 1
