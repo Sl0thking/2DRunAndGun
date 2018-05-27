@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Enemy
   - Projectile
+  - UI
+  - HP_Bar
+  - Ammo_Bar
   layers:
   - Default
   - TransparentFX
@@ -38,6 +41,7 @@ TagManager:
   - 
   - 
   - 
+  - 
   m_SortingLayers:
   - name: Default
     uniqueID: 0
@@ -47,4 +51,7 @@ TagManager:
     locked: 0
   - name: Platform
     uniqueID: 1826370659
+    locked: 0
+  - name: UI
+    uniqueID: 1056926851
     locked: 0
