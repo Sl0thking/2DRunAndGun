@@ -28,6 +28,8 @@ public class Health : MonoBehaviour {
                 Destroy(this.gameObject);
             }
         }
-        healthBar.sizeDelta = new Vector2((int)400*(currentHealth/100f), healthBar.sizeDelta.y);
+        if (this.transform.root.tag == "Player") {
+            healthBar.sizeDelta = new Vector2((int)400*(currentHealth/100f), healthBar.sizeDelta.y);
+        }
     }
 }
