@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 using RunAndGun2D.CustomEvents;
 
 [RequireComponent (typeof(AudioSource))]
@@ -34,6 +35,10 @@ public class Weapon : MonoBehaviour
 		ammunitionCount = magazineSize;
 		shootTimer = 0;
 		reloadTimer = 0;
+
+		// Set EventListener for ammunition display (UI)
+		UIListener uiListen = GameObject.Find("UI").GetComponent<UIListener>();
+		ammunitionPercentageUpdate.AddListener((percentage) => {uiListen.updateAmmunition(percentage);});
 	}
 
 	void Update ()
@@ -60,6 +65,8 @@ public class Weapon : MonoBehaviour
 
 		if (Input.GetKeyDown(KeyCode.Mouse0))
 		{
+			print("test");
+
 			if (shootTimer <= 0 && ammunitionCount > 0)
 			{
                 source.PlayOneShot(weaponShotSound, 1F);

@@ -175,7 +175,6 @@ MonoBehaviour:
   weaponPrefabs:
   - {fileID: 1337430218389726, guid: 8fcda0a5ff363ac4891ef39ed08368b0, type: 2}
   - {fileID: 1380583468416262, guid: ffaa4c80679c88b48b34c01990f8b5c2, type: 2}
-  - {fileID: 0}
   weaponList: []
 --- !u!212 &212610557019694218
 SpriteRenderer:
